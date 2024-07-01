@@ -1,1 +1,13 @@
-<p>all-todos works!</p>
+
+
+<div *ngFor="let todo of todos">
+    <input type="checkbox" [checked]="todo.checked">
+    {{todo.title}}
+    
+</div>
+
+<form (ngSubmit)="onSubmit()">
+    <input type="text" id="title" name="title" [(ngModel)]="title" required>
+    <input type="checkbox" id="checked" name="checked" [(ngModel)]="checked">
+    <button type="submit">TodoItem hinzufügen</button>
+</form>

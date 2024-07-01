@@ -1,4 +1,5 @@
 export const environment = {
     production:true,
-    baseUrl:'http://api.eigenetestsite.com'
+    baseUrl:'http://127.0.0.1:8000'
 };
+ 
